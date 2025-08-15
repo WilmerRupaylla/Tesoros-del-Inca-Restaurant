@@ -1,0 +1,33 @@
+@mixin container_normal($width) {
+    width: $width;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+@mixin container_fluid($padding_block, $padding_inline) {
+    width: 100%;
+    padding-block: $padding_block;
+    padding-inline: $padding_inline;
+}
+
+@mixin container_movil($padding) {
+    padding-inline: $padding;
+}
+
+@mixin container_table_portraid($width, $max) {
+    width: $width;
+    max-width: $max;
+    padding: 0;
+}
+
+@mixin container_table_landscape($max) {
+    max-width: $max;
+}
+
+@mixin container_laptop($max) {
+    max-width: $max;
+}
+
+@mixin container_desktop($max) {
+    max-width: $max;
+}
